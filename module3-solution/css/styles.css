@@ -1,0 +1,125 @@
+/*{
+    box-sizing: border-box;
+}*/
+
+body{
+    font-size: 16px;
+    color: #fff;
+    
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navbar .navbar-nav .nav-item a{
+    text-align: center;
+    color: #000;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.navbar-brand{
+    font-size: 30px ;
+    
+}
+
+.navbar .navbar-nav .nav-item a{
+    padding: 15px;
+   
+    font-size: 20px;
+    
+}
+
+
+.navbar .navbar-nav .nav-but a{
+    padding: 15px ;
+   
+    
+}
+
+.navbar button.navbar-toggler {
+    border: 1px solid #fff ;
+    color: lightgrey;
+
+}
+
+
+#home-tiles{
+    margin-bottom: 20px;
+} 
+
+#mario-tile, #luiji-tile, #bowser-tile{
+    
+    width: 100%;
+    border: 2px solid rgb(56, 55, 55);
+    margin-bottom: 50px;
+    position: relative;
+    box-shadow: 0 0 5px #424040;
+
+} 
+
+#mario-tile:hover, #luiji-tile:hover, #bowser-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#mario-tile{
+    background-color: lightgrey;
+    
+}
+#luiji-tile{
+    background-color: lightgrey;
+}
+#bowser-tile{
+    background-color: lightgrey;
+}
+
+#mario-tile span, #luiji-tile span, #bowser-tile span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+#mario-tile p, #luiji-tile p, #bowser-tile p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000;
+    font-size: 1.3em;
+
+
+}
+
+
+
+
+
+
+
+#menu-categories-title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 3em;
+}
+
+/*end of menu category page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
