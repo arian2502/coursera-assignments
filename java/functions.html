@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+
+    <script>
+        //normal function
+    function checkNum(){
+        var number=prompt("enter a number","");
+
+        if(number<10){
+            console.log(`you entered a number smaller than 10`);
+        for(var i=0;i<number;i++){
+            console.log(`here is a ${i}`)
+        }
+        }
+        else if(number>9) {
+        console.log("you entered a big number");
+        }
+        else{
+        console.log("you did not enter a number");
+        }
+    }
+    //checkNum();
+
+
+    function upperMessage(message){
+        var message=prompt("enter your message","");
+        var upperMessage = message.toUpperCase();
+        console.log(upperMessage);
+    }
+    //upperMessage('message')
+
+    function addNums(num1,num2){
+        //var num1=prompt("enter the first number","");
+        //var num2=prompt("enter the second number","");
+
+        var sum = num1+num2;
+        console.log(sum);
+
+    }
+    //addNums(9,10)
+
+    function returnSum(num1,num2){
+        //var num1=prompt("enter the first number","");
+        //var num2=prompt("enter the second number","");
+
+        var sum = num1+num2;
+        return sum;
+
+    }
+
+    //console.log(returnSum(3,5));
+
+
+
+    </script>
+    
+</body>
+</html>

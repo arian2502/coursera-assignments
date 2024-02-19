@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+    
+<body>
+    
+    <h1> JS Events</h1>
+    <button>click here for next page!</button>
+
+    <script>
+
+        var btn=document.querySelector('button');
+
+        /* function ouch(){
+            alert("told you not to click me");
+        }
+        btn.onclick=ouch; */
+       btn.addEventListener('click',function(event){
+
+       /* event.target.style.backgroundColor="red";
+        alert("told you not to click me!"); */              //event target
+       
+        event.preventDefault();
+        alert("nope not allowed to!")
+    
+        });
+
+    </script>
+
+
+
+</body>
+</html>

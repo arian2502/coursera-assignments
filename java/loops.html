@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops test</title>
+</head>
+<body>
+
+    <h1> Loops in JS</h1>
+    
+    <script>
+            /*normal loop
+         for(var i=0;i<10;i++){
+            console.log(i);
+
+        } */
+
+        /*loop with array
+
+        var colors=["red","green","blue","yellow","orange","purple"];
+
+        for(var i=0;i<colors.length;i++){
+            console.log(colors[i]);
+        }
+            */
+
+            /* for of loop
+
+            var colors=["red","green","blue","yellow","orange","purple","black"];
+
+            for(var eachColor of colors){
+                console.log(eachColor);
+            } */
+
+
+            /* loop test on strings */
+
+            var statement = "the quick brown fox ";
+
+           /* for(var i=0;i<statement.length;i++){
+                console.log(statement[i]);
+            } */
+
+            for( var eachLetter of statement){
+                console.log(eachLetter);
+            }
+      
+    </script>
+</body>
+</html>

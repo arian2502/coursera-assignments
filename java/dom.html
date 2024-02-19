@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM examples</title>
+</head>
+<body>
+
+    <h1> DOM Examples</h1>
+    <!-- <p id="one">Here is a random sentence.</p>
+    <p>here is a paragraph</p>
+    <p>here is a another paragraph</p>
+    <p>here is a one more paragraph</p>
+    
+    <p class="special">Here is a paragraph</p>
+    <p> here is another paragraph </p>
+    <p class="special">here is one more paragraph </p> -->
+
+
+        <div id="special">
+            <p class="someclass">here is a para</p>
+            <p>here is another para</p>
+            <p> here is one more para</p>
+        </div>
+
+
+
+
+    <script>
+        // document.getElementById("one").style.color="red";  (by ID)
+
+        //var myParagraphs = document.getElementsByTagName('p');  (by tag)
+       // console.log(myParagraphs);
+
+      /* for(var i=0;i<myParagraphs.length;i++){
+        myParagraphs[i].style.color="red";
+        alert(`showing paragraph ${i}`);
+       } */
+
+       /* var myClass= document.getElementsByClassName('special');  (by class)
+       for(var i=0;i<myClass.length;i++){
+        myClass[i].style.color="red";
+       } */
+
+       var myText=document.querySelector('#special .someclass');
+       myText.style.color="red";
+       var myText2=document.querySelectorAll('#special p');
+       for(var i=1;i<myText2.length;i++){
+        myText2[i].style.color="blue";
+       }
+
+       /* var myDiv=document.querySelector('#special')
+       myDiv.innerHTML="<p>Here is my new Para</p>"; */
+
+       var myTag = document.createElement('P');
+       var myText = document.createTextNode("here is a new Paragraph");
+       myTag.appendChild(myText);
+       var myDiv = document.querySelector('div');
+       myDiv.appendChild(myTag);
+
+       var myDiv=document.querySelector('div');
+       myDiv.removeChild(myDiv.children[1]);
+
+
+    </script>
+    
+</body>
+</html>

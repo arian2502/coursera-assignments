@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing values</title>
+</head>
+<body>
+    
+    <h1> Comparing values in javascript</h1>
+
+    <script>
+
+        var red=true;
+        var blue=false;
+        var green;
+        var myNum=5;
+        var otherNum=5;
+        var notNum="chicken";
+        var myValue= notNum-myNum;
+        //==, !=, >, < are used for comparision.//
+        //=== is for 'exactly the same as' which compares strings and numbers.//
+        // try to use the === as much as possible to avoid type coercions//
+        if(myValue){
+            console.log("the statement is true");
+        }
+        else {
+            console.log("the statement is false");
+            console.log(myValue); //you get NaN which means not a number//
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

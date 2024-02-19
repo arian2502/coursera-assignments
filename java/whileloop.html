@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+<body>
+
+    <h1> While loop - incrementor</h1>
+    
+
+    <script>
+
+        /*incrementor loop without tickmark*/
+        var incrementor=0;
+        var text="";
+
+        /*while( incrementor<11){
+            text+="the incrementor has gone up to " + incrementor + "\n";
+            incrementor++
+        }
+        console.log(text); */
+        
+
+        /* with tick mark*/
+        while( incrementor<11){
+            text+=`the new incrementor has gone up to ${incrementor}, and its squared is ${incrementor*incrementor}  \n`;
+            incrementor++
+        }
+        console.log(text);
+
+    </script>
+</body>
+</html>

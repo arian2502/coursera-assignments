@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS challenges 2</title>
+</head>
+<body>
+    <h1>JS challenges 2</h1>
+
+    <script>
+
+        // c10
+        /* function hello(){
+            console.log("hello, and welcome!");
+        }
+
+        hello(); */
+        //c11
+        /* function hello(name){
+            console.log(`hello ${name}, and welcome!`);
+        }
+
+        hello('name'); */
+
+        //c12
+        /* var yourName=prompt("enter yout name","");
+        function hello(name){
+            
+            console.log(`hello ${name}, and welcome!`);
+        }
+
+        hello(yourName);
+ */
+        //c13
+        /* var yourName=prompt("enter yout name","");
+        function hello(name){
+            if(name==null||name==''){
+                console.log("you did not enter your name!");
+            }
+            else{
+            
+            console.log(`hello ${name}, and welcome!`);
+        }
+    }
+        hello(yourName);
+ */
+        //c14
+
+        /* var yourName=prompt("enter yout name","");
+
+        function hello(name){
+
+            var greeting;
+
+            if(name==null||name==''){
+                greeting="you did not enter your name!";
+            }
+            else{
+            
+            greeting=`hello ${name}, and welcome!`;
+        }
+
+        return greeting;
+    }
+        console.log(hello(yourName)); */
+
+
+        //c15
+
+        /* var yourName=prompt("enter yout name","");
+        var food=["cheese","fruit","chicken","dessert","candy"];
+        
+        function hello(name){
+
+            var greeting;
+
+            if(name==null||name==''){
+                greeting="you did not enter your name!";
+            }
+            else{
+            
+            greeting=`hello ${name}, and welcome!`;
+        }
+
+
+
+
+
+        return greeting;
+    }
+       
+        function hospitality(name,gift){
+            
+            console.log(hello(yourName));
+            for(var i=0;i<gift.length;i++){
+                console.log(`${name}, would you like some ${gift[i]}?`);
+            }
+
+        }
+        hospitality(yourName,food); */
+
+        //c16
+        var yourName=prompt("enter yout name","");
+        var food=["cheese","fruit","chicken","dessert","candy"];
+        
+        function hello(name){
+
+            var greeting;
+
+            if(name==null||name==''){
+                greeting="you did not enter your name!";
+            }
+            else{
+            
+            greeting=`hello ${name}, and welcome!`;
+        }
+
+
+
+
+
+        return greeting;
+    }
+       
+        function randomInt(min,max){
+            return Math.floor((max-min+1)*Math.random())+min;
+
+        }
+        function hospitality(name,gift){
+            
+            console.log(hello(yourName));
+            var randomGift=gift[randomInt(0,gift.length-1)];
+                console.log(`${name}, would you like some ${randomGift}?`);
+            
+
+        }
+        hospitality(yourName,food);
+
+    </script>
+
+
+
+</body>
+</html>
